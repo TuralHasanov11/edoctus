@@ -17,7 +17,7 @@
                                 <p>Bloq vasitəsilə müxtəlif məlumatlar oxuya bilərsiniz</p>
                             </li>
                             <li>
-                                <p><b><em>Yaxın zamanda</em></b> gələcək olan <b><em>Forum</em></b> vasitəsilə ictimai şəkildə suallarınızı verə biləcəksiniz</p>
+                                <p><b><em>Forum</em></b> vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
                             </li>
                         </ul>
                         <a href="/tests" class="btn_2">Test götürün</a>

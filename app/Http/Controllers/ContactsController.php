@@ -25,7 +25,7 @@ class ContactsController extends Controller
             $contacts = User::where('role','d')->where('id','!=',auth()->id())->get();
         }
 
-        $unreadIds = Message::select(\DB::raw('`from` as sender_id, count(`from`) as messages_count'))
+        $unreadIds = Message::select(\DB::raw('from as sender_id, count(from) as messages_count'))
             ->where('to', auth()->id())
             ->where('read', false)
             ->groupBy('from')
