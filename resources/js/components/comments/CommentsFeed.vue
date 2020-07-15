@@ -5,7 +5,7 @@
                 <div class="user justify-content-between d-flex">
                     <div class="thumb">
                         <template v-if="comment.user.role=='d'">
-                            <img v-if="contact.role=='d'" src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bluecrossnc.com%2Fmanage-your-plan&psig=AOvVaw2iYe9Il0BLFCmDG7AwJjCZ&ust=1594889453853000&source=images&cd=vfe&ved=0CAIQjRxqGAoTCIDc-cTwzuoCFQAAAAAdAAAAABCIAQ' width="3em" height="3em" class="mr-3" alt="...">
+                            <img v-if="contact.role=='d'" src='https://www.bluecrossnc.com/sites/default/files/Manage-Your-Plan-IU65/doctor.png' width="3em" height="3em" class="mr-3" alt="...">
                         </template>
                         <template v-else class="text-primary">
                             <svg width="3em" height="3em" style="color:#3490dc;" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
