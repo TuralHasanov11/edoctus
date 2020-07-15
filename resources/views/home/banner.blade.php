@@ -6,18 +6,18 @@
                     <div class="banner_text_iner">
                         <h1>Xəstəliklərə qarşı evinizdə mübarizə aparın</h1>
                         <h4>Web platformamız sayəsində : </h4>
-                        <ul style="list-style-type: square" class="p-3">
+                         <ul style="list-style-type: square" class="p-3">
                             <li>
-                                <p>Online testlər vasitəsilə xəstəliyə yoluxma ehtimalını hesablaya bilərsiniz</p>
+                                <p>Online <b><em><a href="/test">testlər</a></em></b> vasitəsilə xəstəliyə yoluxma ehtimalını hesablaya bilərsiniz</p>
                             </li>
                             <li>
-                                <p>Həkimlərlə online şəkildə əlaqə saxlayıb (çat) onlardan müalicə tədbirləri ilə bağlı məsləhətlər ala bilərsiniz </p>
+                                <p>Həkimlərlə online şəkildə <b><em><a href="/chat">əlaqə</a></em></b> saxlayıb (çat) onlardan müalicə tədbirləri ilə bağlı məsləhətlər ala bilərsiniz </p>
                             </li>
                             <li>
-                                <p>Bloq vasitəsilə müxtəlif məlumatlar oxuya bilərsiniz</p>
+                                <p><b><em><a href="/news">Bloq</a></em></b> vasitəsilə müxtəlif məlumatlar oxuya bilərsiniz</p>
                             </li>
                             <li>
-                                <p>Forum vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
+                                <p><b><em><a href="/posts">Forum</a></em></b> vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
                             </li>
                         </ul>
                         <a href="/tests" class="btn_2">Xəstəlik testləri</a>
