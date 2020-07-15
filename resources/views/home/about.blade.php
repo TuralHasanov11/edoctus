@@ -13,7 +13,7 @@
                         <b><a target="_blank" href="http://www.bhos.edu.az/">Bakı Ali Neft Məktəbini</a></b> təmsil edən komandamızla birlikdə {{env('APP_NAME')}}
                         proyektini yaratdıq
                     </p>
-                    <a class="btn_2 " href="/about">Ətraflı</a>
+                    {{-- <a class="btn_2 " href="/about">Ətraflı</a> --}}
                 </div>
             </div>
         </div>
