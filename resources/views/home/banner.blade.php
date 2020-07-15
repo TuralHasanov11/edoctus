@@ -1,4 +1,4 @@
-<section class="banner_part">
+﻿<section class="banner_part">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-xl-5">
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="banner_img">
-                    <img src="/storage/images/banner_img.png" alt="">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Fbanner_img.png?alt=media&token=c2b09b18-da13-4638-b1e6-97c5c60133f7" alt="">
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title')</title>
-    <link rel="shortcut icon" href="/storage/images/logo5.png" type="image/png">
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Flogo5.png?alt=media&token=28704c2a-21b3-4b72-a88e-1d5e3fb80283" type="image/png">
     <!-- Scripts -->
     <script src="{{env('APP_URL')}}js/app.js" defer></script>
 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', $doctor->name.' - '.env('APP_NAME'))
 
@@ -11,7 +11,7 @@
             <h5 class="mb-3 text-secondary"><b><i class="fa fa-user-md" aria-hidden="true"></i> {{$doctor->doctorInfo->doctorType->name}}</b></h5>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhRRA73GB6ky1fk_TSdiacnC37UcYim4JEA&usqp=CAU" alt="" class="img-fluid">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Fdoctors%2Fdoctor-default.png?alt=media&token=ce4221a0-f19d-4424-b1ca-842e0c328985" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-9 mt-sm-20">
                     <h3>Məlumat</h3>

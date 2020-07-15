@@ -18,7 +18,7 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="single_blog_item border p-2">
                                 <div class="single_blog_img">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhRRA73GB6ky1fk_TSdiacnC37UcYim4JEA&usqp=CAU" alt="doctor">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Fdoctors%2Fdoctor-default.png?alt=media&token=ce4221a0-f19d-4424-b1ca-842e0c328985" alt="doctor">
                                 </div>
                                 <div class="single_text">
                                     <div class="single_blog_text text-center">
