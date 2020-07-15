@@ -10,7 +10,7 @@
                 <div class="about_us_text">
                     <h2>Haqqımızda</h2>
                     <p>Beynəlxalq <b><a target="_blank" href="https://enactus.org/"> Enactus</a></b> layihəsi çərçivəsində 
-                        <b><a target="_blank" href="http://www.bhos.edu.az/">Bakı Ali Neft Məktəbini</a></b> təmsil edən komandımızla birlikdə {{env('APP_NAME')}}
+                        <b><a target="_blank" href="http://www.bhos.edu.az/">Bakı Ali Neft Məktəbini</a></b> təmsil edən komandamızla birlikdə {{env('APP_NAME')}}
                         proyektini yaratdıq
                     </p>
                     <a class="btn_2 " href="/about">Ətraflı</a>
