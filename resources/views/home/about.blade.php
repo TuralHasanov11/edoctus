@@ -3,7 +3,7 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-md-6 col-lg-6">
                 <div class="about_us_img">
-                    <img src="/storage/images/top_service.png" alt="">
+                    <img src="/storage/app/public/images/top_service.png" alt="">
                 </div>
             </div>
             <div class="col-md-6 col-lg-5">

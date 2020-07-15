@@ -9,7 +9,7 @@
            <div class="row">
               <div class="col-lg-8 posts-list">
                  <div class="single-post">
-                    <h2>{{$post->title}}</h2>
+                    <h2>Edit : {{$post->title}}</h2>
                     <div class="blog_details">
                         {!! Form::open(['action' => ['PostsController@update', $post->id], 'method'=>'POST']) !!}
                             <div class="form-group">

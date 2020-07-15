@@ -4,46 +4,41 @@
 
 @section('content')
 
-<section class="breadcrumb_part breadcrumb_bg">
+<section class="contact-section section_padding">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb_iner">
-                    <div class="breadcrumb_iner_item">
-                        <h2>Həkimlər</h2>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title text-center">Həkimlər</h2>
         </div>
-    </div>
-</section>
-
-<section class="doctor_part single_page_doctor_part">
-    <div class="container">
-        <div class="row">
-
-            @foreach ($doctors as $doctor)
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_blog_item">
-                        <div class="single_blog_img">
-                            <img src="/storage/images/doctors/{{$doctor->profile_image}}" alt="doctor">
-                        </div>
-                        <div class="single_text">
-                            <div class="single_blog_text">
-                                <a href="/doctors/{{$doctor->id}}"><h3>{{$doctor->name}}</h3></a>
-                                <p>{{$doctor->doctorInfo->doctorType->name}}</p>
+        <div class="col">
+            <div class="container">
+                <div class="row">
+        
+                    @foreach ($doctors as $doctor)
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="single_blog_item">
+                                <div class="single_blog_img">
+                                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconsdb.com%2Froyal-blue-icons%2Fdoctor-2-icon.html&psig=AOvVaw25Rga_Piz8Wdt_kWYBjln7&ust=1594889959904000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDU16TyzuoCFQAAAAAdAAAAABBT" alt="doctor">
+                                </div>
+                                <div class="single_text">
+                                    <div class="single_blog_text">
+                                        <a href="/doctors/{{$doctor->id}}"><h3>{{$doctor->name}}</h3></a>
+                                        <p>{{$doctor->doctorInfo->doctorType->name}}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-            @endforeach
+                <div class="row justify-content-center">
+                    {{ $doctors->links() }}
+                </div>
+            </div>
+            
         </div>
-        <div class="row justify-content-center">
-            {{ $doctors->links() }}
-        </div>
+        
+      </div>
     </div>
-    
-</section>
-
+  </section>
 <!--::doctor_part end::-->
 @endsection
