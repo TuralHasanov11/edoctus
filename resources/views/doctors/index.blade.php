@@ -21,7 +21,7 @@
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhRRA73GB6ky1fk_TSdiacnC37UcYim4JEA&usqp=CAU" alt="doctor">
                                 </div>
                                 <div class="single_text">
-                                    <div class="single_blog_text">
+                                    <div class="single_blog_text text-center">
                                         <a href="/doctors/{{$doctor->id}}"><h3>{{$doctor->name}}</h3></a>
                                         <p>{{$doctor->doctorInfo->doctorType->name}}</p>
                                     </div>
