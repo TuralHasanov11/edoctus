@@ -18,10 +18,10 @@
                                 <a class="nav-link" href="/">Əsas Səhifə</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/tests">Testlər</a>
+                                <a class="nav-link" href="/tests">Xəstəlik testləri</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/chat">Chat</a>
+                                <a class="nav-link" href="/chat">Əlaqə</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/doctors">Həkimlər</a>
@@ -41,9 +41,9 @@
                                     @endcan
                                 </div>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="/about">Haqqımızda</a>
-                            </li>
+                            </li> --}}
                         </ul>
                         <ul class="navbar-nav align-items-md-center ml-md-auto" style="font-size: 1rem">
                             <!-- Authentication Links -->

@@ -47,10 +47,8 @@
         <div class="">
            <form action="/tests/{{$test->id}}/calculate" method="POST">
                 @csrf
-                <div class="row py-5 flex-column align-items-center">
                     @foreach ($test->questions as $index => $question)
-                        <div class="col col-lg-9 my-3">
-                            <div class="card border-primary">
+                            <div class="card border-primary my-2">
                                 <div class="card-body">
                                   <h5 class="card-title font-weight-bold">{{$index+1}}. {{$question->title}}</h5>
                                   @if ($question->type=='s')
@@ -67,7 +65,6 @@
                                   @endif
                                 </div>
                             </div>
-                        </div>
                     @endforeach
                     @if ($result)
                         @method('PUT')
@@ -77,7 +74,6 @@
                             <button type="submit" class="btn btn-primary">Təsdiqlə</button>
                         </div>
                     </div>
-                </div>
            </form>
            {{-- <app-test :questions="{{$test->questions}}" :testid="{{$test->id}}"></app-test> --}}
         </div>

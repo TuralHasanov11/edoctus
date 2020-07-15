@@ -17,10 +17,10 @@
                                 <p>Bloq vasitəsilə müxtəlif məlumatlar oxuya bilərsiniz</p>
                             </li>
                             <li>
-                                <p><b><em>Forum</em></b> vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
+                                <p>Forum vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
                             </li>
                         </ul>
-                        <a href="/tests" class="btn_2">Test götürün</a>
+                        <a href="/tests" class="btn_2">Xəstəlik testləri</a>
 
                     </div>
                 </div>
