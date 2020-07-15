@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Həkimlər - '.env('APP_NAME'))
 
@@ -16,7 +16,7 @@
         
                     @foreach ($doctors as $doctor)
                         <div class="col-sm-6 col-lg-3">
-                            <div class="single_blog_item border">
+                            <div class="single_blog_item border p-2">
                                 <div class="single_blog_img">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhRRA73GB6ky1fk_TSdiacnC37UcYim4JEA&usqp=CAU" alt="doctor">
                                 </div>
