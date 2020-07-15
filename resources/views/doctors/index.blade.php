@@ -16,9 +16,9 @@
         
                     @foreach ($doctors as $doctor)
                         <div class="col-sm-6 col-lg-3">
-                            <div class="single_blog_item">
-                                <div class="single_blog_img border">
-                                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconsdb.com%2Froyal-blue-icons%2Fdoctor-2-icon.html&psig=AOvVaw25Rga_Piz8Wdt_kWYBjln7&ust=1594889959904000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDU16TyzuoCFQAAAAAdAAAAABBT" alt="doctor">
+                            <div class="single_blog_item border">
+                                <div class="single_blog_img">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhRRA73GB6ky1fk_TSdiacnC37UcYim4JEA&usqp=CAU" alt="doctor">
                                 </div>
                                 <div class="single_text">
                                     <div class="single_blog_text">
