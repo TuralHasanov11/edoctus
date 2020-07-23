@@ -41,9 +41,9 @@
                                     @endcan
                                 </div>
                             </li>
-                            {{-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/about">Haqqımızda</a>
-                            </li> --}}
+                            </li> 
                         </ul>
                         <ul class="navbar-nav align-items-md-center ml-md-auto" style="font-size: 1rem">
                             <!-- Authentication Links -->

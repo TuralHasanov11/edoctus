@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get('/about',  function () {
+        return view('pages.about');
+})->name('about');
 
 // Doctors
 Route::get('/doctors', 'DoctorsController@index');
