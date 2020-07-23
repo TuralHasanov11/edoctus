@@ -1,24 +1,16 @@
+
 @extends('layouts.app')
 
 @section('title', 'Testlər - '.env('APP_NAME'))
 
 
 @section('content')
-<section class="breadcrumb_part breadcrumb_bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb_iner">
-                    <div class="breadcrumb_iner_item">
-                        <h2>Testlər</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="">
+    <div class="d-none d-sm-block mb-5 pb-4"></div>
+    <h2 class="contact-title text-center">Xəstəlik Testləri</h2>
 </section>
 
-<section class="feature_part single_feature_page">
+<section class="feature_part single_feature_page mb-5">
     <div class="container">
         <div class="row">
             @foreach ($tests as $test)
