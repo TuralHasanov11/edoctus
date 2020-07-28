@@ -1,4 +1,4 @@
-﻿
+
 <header class="main_menu">
     <div class="container">
         <div class="row align-items-center">
@@ -18,17 +18,27 @@
                                 <a class="nav-link" href="/">Əsas Səhifə</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/tests">Xəstəlik testləri</a>
+                                <a class="nav-link" href="/tests/1">Covid-19 testi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/chat">Əlaqə</a>
+                                
+                                <a class="nav-link" href="/chat">
+                                    @if (auth()->check() && auth()->user()->role=='d')
+                                        İstifadəçilərlə Əlaqə
+                                    @else
+                                        Həkimlərlə Əlaqə
+                                    @endif
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/doctors">Həkimlər</a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="/news">Bloq</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/statistics">Statistika</a>
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/posts" id="navbarDropdown_1"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,7 +53,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">Haqqımızda</a>
-                            </li> 
+                            </li>
                         </ul>
                         <ul class="navbar-nav align-items-md-center ml-md-auto" style="font-size: 1rem">
                             <!-- Authentication Links -->

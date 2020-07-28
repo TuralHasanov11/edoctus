@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Test;
+use App\Region;
+use App\AgeGroup;
+use App\UserTest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\TestResultMail;
 
 class TestsController extends Controller
 {
@@ -12,9 +17,9 @@ class TestsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct(){
-        $this->middleware('auth')->except(['index']);
-    }
+    // public function __construct(){
+    //     $this->middleware('auth')->except(['index']);
+    // }
 
 
     public function index()
@@ -67,10 +72,12 @@ class TestsController extends Controller
      */
     public function show($id)
     {
-        $test=Test::with(['questions','users'])->find($id);
-        $result=$this->userResult($test);
+        $test=Test::with(['questions'])->find($id);
         
-        return view('tests.show')->with(['test'=>$test, 'result'=>$result]);
+        $ageGroups=AgeGroup::all();
+        $regions=Region::all();
+
+        return view('tests.show')->with(['result'=>NULL,'test'=>$test, 'ageGroups'=>$ageGroups, 'regions'=>$regions]);
     }
 
     /**
@@ -125,37 +132,20 @@ class TestsController extends Controller
             $result+=($answers[$key]*$question->percentage);
         }
 
-        if($request->isMethod('put')){
-            // auth()->user()->tests;
-            auth()->user()->tests()->updateExistingPivot($id, ['result' => $result]);
-        }else{
-            auth()->user()->tests()->attach($id, ['result' => $result]);
+        $userTest=new UserTest([
+            'result' => $result,
+            'region_id'=>$request->input('region'),
+            'age_group_id'=>$request->input('age_group')
+        ]);
+
+        $test->userTests()->save($userTest);
+
+        if($request->input('email')){
+            Mail::to($request->input('email'))->send(new TestResultMail(['result'=>$result,'treshold'=>$test->treshold]));
         }
-
-       
-
-        return redirect("/tests/$id")->with('success','Test tamamlandı');
+        
+        return redirect("/tests/$id")->with(['success'=>'Test tamamlandı','result'=>$result]);
 
     }
 
-    public function userResult($test){
-        if(!auth()){
-            return null;
-        }
-        $result=0;
-        foreach ($test->users as $key => $user) {
-            if($user->id==auth()->user()->id){
-                $result=$user->user_test->result;
-                break;
-            }
-        }
-        return $result;
-    }
 }
-
-
-// @if (session('status'))
-// <div class="alert alert-success" role="alert">
-//     {{ session('status') }}
-// </div>
-// @endif

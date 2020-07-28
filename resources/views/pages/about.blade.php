@@ -24,7 +24,8 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <img class="d-block my-3" src="https://enactus.s3.amazonaws.com/assets/enactus-org/large/home-logo.png" alt="Enactus">
-                    <img class="d-block my-3" src="https://lh3.googleusercontent.com/proxy/GFpjzxUeVuCfnTQyie1FtbpH3sKe5xf99WlV9HQMFFDQ_ca8CXUK00h__VfaD5NakreK3NSXqj11nWbEvSh3sDNOQVUvxj0gsDEHLb0IdAI3q6GwTPHwk612s0EPLlNMC-GUpjcp9g" alt="">
+                    <hr>
+                    <img class="d-block my-3" src="https://lh3.googleusercontent.com/proxy/Br6Vm590NeXAAwQu9dguhjWdswb_rTn2vl5Tlf-hL5oAQSkzDKucSd20k_xHPulaKXi9MYYZD_9GIs35kQMJppojIHG_bSj2Uog9StLvlVfSVbvb" alt="">
                 </div>
             </div>
             <p></p>

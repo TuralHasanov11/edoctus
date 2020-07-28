@@ -6,7 +6,6 @@
 @section('content')
 <section class="contact-section section_padding">
     <div class="container">
-      <div class="d-none d-sm-block mb-5 pb-4"></div>
       <div class="row">
         <div class="col-12">
           <h2 class="contact-title text-center">Qeydiyyatdan keç</h2>
@@ -73,7 +72,7 @@
                     </div>
                 </div>
             </form>
-            <p class="text-center my-5">Hesabınız mövcuddursa <a href="/login">buradan</a> hesabınıza daxil olun!</p>
+            <p class="text-center my-3">Hesabınız mövcuddursa <a href="/login">buradan</a> hesabınıza daxil olun!</p>
         </div>
         
       </div>
