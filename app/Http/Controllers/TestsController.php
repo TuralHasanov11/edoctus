@@ -138,7 +138,7 @@ class TestsController extends Controller
             'age_group_id'=>$request->input('age_group')
         ]);
 
-        $test->userTests()->save($userTest);
+        $test->userTest()->save($userTest);
 
         if($request->input('email')){
             Mail::to($request->input('email'))->send(new TestResultMail(['result'=>$result,'treshold'=>$test->treshold]));
