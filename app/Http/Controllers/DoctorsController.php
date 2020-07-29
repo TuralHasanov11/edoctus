@@ -44,23 +44,11 @@ class DoctorsController extends Controller
             'type'=>'required',
         ]);
 
-        // if($request->hasFile('profile_image')){
-        //     $fileNameWithExt=$request->file('profile_image')->getClientOriginalName();
-        //     $fileName=pathinfo($fileNameWithExt,PATHINFO_FILENAME);
-        //     $extension=$request->file('profile_image')->getClientOriginalExtension();
-        //     $fileNameToStore=$fileName.'_'.time().'.'.$extension;
-        //     $path=$request->file('profile_image')->storeAs('public/images/doctors',$fileNameToStore);
-        // }
-        // else{
-        //     $fileNameToStore='noimage.jpg';
-        // }
-
         $doctor=new User;
         $doctor->name=$request->name;
         $doctor->email=$request->email;
         $doctor->password=Hash::make($request->password);
         $doctor->role='d';
-        // $doctor->profile_image=$fileNameToStore;
 
         if($doctor->save()){
             $info = new DoctorInfo;
@@ -88,6 +76,8 @@ class DoctorsController extends Controller
         }
 
         if($doctor->doctorInfo()->delete()){
+            $doctor->posts()->delete();
+            $doctor->comments()->delete();
             // $info=DoctorInfo::where('doctor_id', $id)->first();
             if($doctor->delete()){
                 return redirect('/admin/doctors')->with('success','Həkim Silindi');
