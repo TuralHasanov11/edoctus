@@ -20,7 +20,7 @@
                                 <p><b><em><a href="/posts">Forum</a></em></b> vasitəsilə ictimai şəkildə suallarınızı verə bilərsiniz</p>
                             </li>
                         </ul>
-                        <a href="/tests" class="btn_2">Xəstəlik testləri</a>
+                        <a href="/tests/1" class="btn_2">Covid-19 Testi</a>
 
                     </div>
                 </div>
