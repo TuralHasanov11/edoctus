@@ -129,7 +129,12 @@ class TestsController extends Controller
         
         $result=0;
         foreach ($test->questions as $key => $question) {
-            $result+=($answers[$key]*$question->percentage);
+            if($answers[$key]){
+                $result+=($answers[$key]*$question->percentage);
+            }
+            else{
+                $result+=0;
+            }
         }
 
         $userTest=new UserTest([
