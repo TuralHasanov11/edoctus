@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="/"> <img src="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Flogo5.png?alt=media&token=28704c2a-21b3-4b72-a88e-1d5e3fb80283" alt="logo"> </a>
+                    <a class="navbar-brand" href="/"> <img src="https://firebasestorage.googleapis.com/v0/b/medicusv1.appspot.com/o/images%2Flogo_new.png?alt=media&token=26587a99-96ad-41a9-904c-ce4e9f137922" alt="logo"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">

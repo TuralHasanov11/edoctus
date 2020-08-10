@@ -12,7 +12,7 @@
         <div class="col">
           <div class="row justify-content-between ">
             <div class="col-12 col-md-5">
-              <b>Medicus</b> - beynəlxalq <a target="_blank" href="https://enactus.org/">Enactus</a> yarışı çərçivəsində irəli sürülmüş 
+              <b>{{env('APP_NAME')}}</b> - beynəlxalq <a target="_blank" href="https://enactus.org/">Enactus</a> yarışı çərçivəsində irəli sürülmüş 
               və <a target="_blank" href="http://www.bhos.edu.az/az/page/722-innovasiya-va-tadqiqatlar-markazi/staff">BANM İnnovasiya və Tədqiqatlar Mərkəzinin</a> dəstəyi ilə <a target="_blank" href="http://www.bhos.edu.az/">Baki Ali Neft Məktəbinin</a> tələbələri tərəfindən veb-səhifə olaraq hazırlanmışdır. 
               Bir komanda olaraq, bizim məqsədimiz pandemiya dövründə insanları 
               Covid-19 barədə düzgün məlumatlandırmaq və xəstəliyin ilkin simptomları aşkarlandığı halda həkimlərlə 
