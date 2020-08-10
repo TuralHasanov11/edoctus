@@ -15,7 +15,7 @@
                        <div class="col col-lg-9">
                         <h2>{{$test->title}}</h2>
                         <h5 class="text-secondary">Bu testin nəticəsinin positiv çıxması üçün minimum göstərici : {{$test->treshold}}%</h5>
-                        <h5>Həkimlərimizlə <a href="/doctors">əlaqə saxlayın</a></h5>
+                        <h5>Həkimlərimizlə <a href="/chat">əlaqə saxlayın</a></h5>
                        </div>
                        <div class="col col-lg-3">
                         @if (session('result'))
