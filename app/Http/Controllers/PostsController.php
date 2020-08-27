@@ -19,6 +19,7 @@ class PostsController extends Controller
     public function index()
     {
         $posts=Post::with('user')->where('approved',1)->orderBy('created_at', 'desc')->paginate(5);
+        dd($posts);
 
         return view('posts.index')->with('posts', $posts);
     }
